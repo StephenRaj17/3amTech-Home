@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3amTech-Home | Tech & Lifestyle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -14,80 +14,103 @@
             color: #333;
         }
         header {
-            background: #0073e6;
+            background: linear-gradient(135deg, #0073e6, #00b8d4);
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
-            font-size: 26px;
+            font-size: 48px; /* Larger font size for impact */
             font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif; /* New font for the title */
+            letter-spacing: 2px; /* Adds spacing for a modern look */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #005bb5;
-            padding: 10px;
+            background: linear-gradient(135deg, #005bb5, #0073e6);
+            padding: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
             font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
         }
         .search-bar {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .search-bar input {
             width: 80%;
             max-width: 500px;
-            padding: 12px;
+            padding: 15px;
             font-size: 16px;
             border: 2px solid #0073e6;
-            border-radius: 8px;
+            border-radius: 25px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .search-bar input:focus {
+            border-color: #00b8d4;
+            box-shadow: 0px 0px 10px rgba(0, 184, 212, 0.5);
         }
         .container {
             max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            padding: 30px;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
         }
         .product {
             border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
             background: #fff;
-            border-radius: 8px;
-            transition: transform 0.3s;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .product:hover {
             transform: scale(1.03);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
         }
         .product img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 12px;
         }
         .product a {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #0073e6;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #0073e6, #00b8d4);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 4px 10px rgba(0, 115, 230, 0.3);
         }
         footer {
-            background: #005bb5;
+            background: linear-gradient(135deg, #005bb5, #0073e6);
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: relative;
             bottom: 0;
             width: 100%;
             font-size: 14px;
+            box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
